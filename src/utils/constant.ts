@@ -75,52 +75,52 @@ export const projects = [
     {
         name: "Learning Modules",
         link: "https://www.botreeinc.com/",
-        imageUrl: "images/botree.png"
+        imageUrl: `src\\assets\\images\\botree.png`
     },
     {
         name: "OrderXL",
         link: "https://orderxl.com/",
-        imageUrl: "images/orderXL.png"
+        imageUrl: "src\\assets\\images\\orderXL.png"
     },
     {
         name: "Surebird",
         link: "https://www.surebird.nl/",
-        imageUrl: "images/Surebird.png"
+        imageUrl: "src\\assets\\images\\Surebird.png"
     },
     {
         name: "Tibo Energy",
         link: "https://tibo.energy/",
-        imageUrl: "images/tibo.png"
+        imageUrl: "src\\assets\\images\\tibo.png"
     },
     {
         name: "Sdoky",
         link: "https://www.sdoky.com/en",
-        imageUrl: "images/sdoky.png"
+        imageUrl: "src\\assets\\images\\sdoky.png"
     },
     {
         name: "ORANGE STUDIO",
         link: "https://ankaek.com/our-games",
-        imageUrl: "images/ocarrom.png"
+        imageUrl: "src\\assets\\images\\ocarrom.png"
     },
     {
         name: "Narad Muni",
         link: "",
-        imageUrl: "images/Naradmuni.png"
+        imageUrl: "src\\assets\\images\\Naradmuni.png"
     },
     // {
     //     name:"My Social View",
     //     link:"",
-    //     imageUrl: "images/blackp.png"
+    //     imageUrl: "src\\assets\\images\\blackp.png"
     // },
     // {
     //     name:"Worker pros",
     //     link:"",
-    //     imageUrl: "images/blackp.png"
+    //     imageUrl: "src\\assets\\images\\blackp.png"
     // },
     // {
     //     name:"Chatbots",
     //     link:"",
-    //     imageUrl: "images/blackp.png"
+    //     imageUrl: "src\\assets\\images\\blackp.png"
     // },
 ]
 
