@@ -6,7 +6,7 @@ function Expertise() {
   return (
     <section className="section-conatiner flex" id="expertise">
       <PageName name="Expertise" />
-      <div className="container skills-container m-16" >
+      <div className="container skills-container m-auto px-24" >
         <div className="skills-container-sub" style={{ "animation-delay": "0.1s" }}>
           <h2>Languages and Frameworks</h2>
           <p>{langFrames}</p>
