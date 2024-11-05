@@ -1,0 +1,77 @@
+.section-conatiner {
+    position: relative;
+    background-size: cover !important;
+    width: 100%;
+    height: 100vh;
+    z-index: -200;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.6);
+}
+
+#about {
+    background: url("./assets/images/aboutBg.jpg");
+}
+
+#expertise {
+    background: url("./assets/images/aboutBg.png");
+}
+
+#academic {
+    background: url("./assets/images/aboutBg.png");
+}
+
+#portfolio {
+    background: url("./assets/images/portfolioBg.jpg");
+}
+
+#intro {
+    background: url("./assets/images/aacic.jpg");
+}
+
+.skills-container {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.skills-container-sub {
+    margin-bottom: 20px;
+}
+
+.skills-container-sub h2 {
+    font-size: 1.8em;
+    color: #ffd700;
+    border-bottom: 2px solid #ffd700;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.skills-container-sub {
+    margin-bottom: 20px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s forwards ease-out;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(40px) scale(0.95);
+    }
+
+    60% {
+        opacity: 1;
+        transform: translateY(-10px) scale(1.02);
+    }
+
+    80% {
+        opacity: 1;
+        transform: translateY(5px) scale(0.98);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
