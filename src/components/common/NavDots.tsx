@@ -3,7 +3,7 @@ import { MainMenuListItem } from "../../utils/constant";
 
 const NavDots = ({ currentPage }) => {
     return (
-        <div className="flex items-center h-screen justify-center bg-cover bg-center">
+        <div className="fixed right-8 flex items-center h-screen justify-center bg-cover bg-center">
             <div className="flex flex-col items-center space-y-3">
                 {MainMenuListItem.map((item, index) => {
                     const url = `/${item.toLocaleLowerCase()}`
