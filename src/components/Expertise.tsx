@@ -1,4 +1,5 @@
 import { ExpertiseContent } from "../utils/constant";
+import NavDots from "./common/NavDots";
 import PageName from "./common/PageName";
 function Expertise() {
   const { langFrames, databases, otherToolsTechnologies, relavantCoursework } = ExpertiseContent
@@ -23,6 +24,7 @@ function Expertise() {
           <p>{relavantCoursework}</p>
         </div>
       </div>
+      <NavDots currentPage="Expertise" />
     </section>
   )
 }
