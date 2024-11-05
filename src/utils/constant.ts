@@ -1,5 +1,128 @@
 export const MainMenuListItem: Array<string> = ["Intro", "About", "Expertise", "Academic", "Portfolio"]
 
+export const FirstName = "Ashish"
+export const LastName = "Thapa"
+export const PersonalStatement = "Passionate Software Engineer | Computer Engineering Graduate 🎓 | Graduate Certificate in Artificial Intelligence 🎓 | Graduate Certificate in Big Data Analytics 🎓 | Years of Experience in Crafting Scalable Solutions 💻 | Committed to Continuous Learning and Innovation 🌟 | Let's connect and explore the limitless possibilities at the intersection of code and creativity! 👨‍💻 #Web applications #Data Science #Machine Learning & AI Solutions"
+export const Designation = "Software Engineer"
+
+export const Education = [
+    {
+        completedYear: "Expected Graduation Year: April 2025",
+        institution: "Georgian College",
+        affiliation: "",
+        level: "Graduate Certificate in Big Data Analytics",
+        location: "Ontario, Canada"
+    },
+    {
+        completedYear: "Graduated Year: 2024",
+        institution: "Georgian College",
+        affiliation: "",
+        level: "Graduate Certificate in Artificial Intelligence: Architecture, Design, and Implementation",
+        location: "Ontario, Canada"
+    },
+    {
+        completedYear: "Graduated Year: 2018",
+        institution: "Kantipur Engineering College",
+        affiliation: "",
+        level: "Bachelor’s in Computer Engineering",
+        location: "Lalitpur, Nepal"
+    },
+]
+
+export const Experience = [
+    {
+        start: "2023",
+        end: "2024",
+        timeframe: "Jan 2024 to April 2024",
+        company: "Botree Inc.",
+        position: "AI Software Engineer",
+        location: "Barrie, Ontario",
+    },
+    {
+        start: "2018",
+        end: "2019",
+        timeframe: "May 2021 to Sept. 2023",
+        company: "Proshore Nepal Pvt. Ltd.",
+        position: "NodeJs Developer",
+        location: "Kathmandu, Nepal",
+    },
+    {
+        start: "2018",
+        end: "2019",
+        timeframe: "Dec. 2019 to May 2021",
+        company: "E-signature Pvt. Ltd.",
+        position: "NodeJs Developer",
+        location: "Kathmandu, Nepal",
+    },
+    {
+        start: "2018",
+        end: "2019",
+        timeframe: "Oct. 2018 to July 2019",
+        company: "Palmmind IT Consultancy Pvt. Ltd.",
+        position: "Software Trainee",
+        location: "Kathmandu, Nepal",
+    },
+]
+
+export const SoftSkills = [
+    "Adept at evaluating situations objectively and making sound decision making based on thorough critical analysis.",
+    "Dedicated to nurturing an environment of open and transparent communication, facilitating mutual understanding, and accompanying objectives through concise and impactful interactions.",
+    "Ability to rapidly acquire new knowledge and skills, adapt to field dynamics, and mitigating potential escalations through proactive skill development and industry trends.",
+    "Proficient in meticulously optimizing workflow efficiency, adeptly prioritizing tasks, and consistently meeting deadlines while upholding the highest standards of work quality."
+]
+
+export const projects = [
+    {
+        name: "Learning Modules",
+        link: "https://www.botreeinc.com/",
+        imageUrl: "images/botree.png"
+    },
+    {
+        name: "OrderXL",
+        link: "https://orderxl.com/",
+        imageUrl: "images/orderXL.png"
+    },
+    {
+        name: "Surebird",
+        link: "https://www.surebird.nl/",
+        imageUrl: "images/Surebird.png"
+    },
+    {
+        name: "Tibo Energy",
+        link: "https://tibo.energy/",
+        imageUrl: "images/tibo.png"
+    },
+    {
+        name: "Sdoky",
+        link: "https://www.sdoky.com/en",
+        imageUrl: "images/sdoky.png"
+    },
+    {
+        name: "ORANGE STUDIO",
+        link: "https://ankaek.com/our-games",
+        imageUrl: "images/ocarrom.png"
+    },
+    {
+        name: "Narad Muni",
+        link: "",
+        imageUrl: "images/Naradmuni.png"
+    },
+    // {
+    //     name:"My Social View",
+    //     link:"",
+    //     imageUrl: "images/blackp.png"
+    // },
+    // {
+    //     name:"Worker pros",
+    //     link:"",
+    //     imageUrl: "images/blackp.png"
+    // },
+    // {
+    //     name:"Chatbots",
+    //     link:"",
+    //     imageUrl: "images/blackp.png"
+    // },
+]
 
 export const ExpertiseContent = {
     langFrames: "JavaScript, Nodejs, NestJs, ExpressJs, Typescript, Python, Mocha & Chai, React",
@@ -7,6 +130,7 @@ export const ExpertiseContent = {
     otherToolsTechnologies: "REST API, Template Engines [ EJS ], Version Control [ Git ] , Amazon web services(AWS), Azure, Heroku, Third party API Integration, Docker, Postman, Swagger, Jira, Agile, Hugging Face, NLTK, OpenCV.",
     relavantCoursework: "Cloud Computing, Database Management System (DBMS), Data Structures & Algorithms, Object-Oriented Programming (OOP), AI algorithms & Mathematics, Natural language Processing (NLP), Neural Networks (NN), Computer Vision, AI infrastructure & Architecture [ Azure, AWS ], Machine Learning Programming & Frameworks"
 }
+
 
 
 export const defaultParticleOption = {
