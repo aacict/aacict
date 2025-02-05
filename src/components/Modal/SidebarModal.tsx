@@ -9,7 +9,7 @@ function SidebarModal({ isOpen, toggleBar }) {
     <div className={`fixed top-0 right-0 h-full w-96 transform transition-transform duration-300 
       ${isOpen ? "translate-x-0" : "translate-x-full hidden"}`}>
       <div className="absolute top-0 left-0 w-full h-full z-[-1]">
-        <Particle options={SidebarParticleOption} />
+        <Particle particleId="ts-particle-sidebar" options={SidebarParticleOption} />
       </div>
       <div  >
         <FontAwesomeIcon className="relative cursor-pointer z-20 text-black" style={{ padding: "14px 14px 14px 90%" }} icon={faXmark} onClick={toggleBar} size="2x" />

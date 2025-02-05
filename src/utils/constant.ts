@@ -104,8 +104,13 @@ export const projects = [
     },
     {
         name: "Narad Muni",
-        link: "",
+        link: "https://www.facebook.com/NaradMuniApp/",
         imageUrl: "src\\assets\\images\\Naradmuni.png"
+    },
+    {
+        name: "Chatbots",
+        link: "https://www.laxmisunrise.com/",
+        imageUrl: "src\\assets\\images\\laxmiddbot.png"
     },
     // {
     //     name:"My Social View",
@@ -117,11 +122,7 @@ export const projects = [
     //     link:"",
     //     imageUrl: "src\\assets\\images\\blackp.png"
     // },
-    // {
-    //     name:"Chatbots",
-    //     link:"",
-    //     imageUrl: "src\\assets\\images\\blackp.png"
-    // },
+
 ]
 
 export const ExpertiseContent = {
@@ -136,18 +137,18 @@ export const ExpertiseContent = {
 export const defaultParticleOption = {
     background: {
         color: {
-            value: "#0d47a1",
+            value: "#222222",
         },
     },
     fpsLimit: 120,
     interactivity: {
         events: {
             onClick: {
-                enable: true,
+                enable: false,
                 mode: "push",
             },
             onHover: {
-                enable: true,
+                enable: false,
                 mode: "repulse",
             },
             resize: true,

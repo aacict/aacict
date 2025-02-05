@@ -7,7 +7,7 @@ const NavDots = ({ currentPage }) => {
             <div className="flex flex-col items-center space-y-3">
                 {MainMenuListItem.map((item, index) => {
                     const url = `/${item.toLocaleLowerCase()}`
-                    const active = currentPage == item ? `w-2 h-2 bg-white rounded-full` : `w-2 h-2 bg-gray-400 rounded-full`
+                    const active = currentPage == item ? `w-3 h-3 bg-white rounded-full` : `w-3 h-3 bg-gray-400 rounded-full`
                     return <Link to={url} key={index} className={active} />
                 })}
             </div>

@@ -6,7 +6,7 @@ import {
 } from "@tsparticles/engine";
 import { loadSlim } from "@tsparticles/slim"; // if you are going to use `loadSlim`, install the "@tsparticles/slim" package too.
 
-const Particle = ({options}) => {
+const Particle = ({ particleId, options }) => {
   const [init, setInit] = useState(false);
   useEffect(() => {
     initParticlesEngine(async (engine) => {
@@ -14,16 +14,16 @@ const Particle = ({options}) => {
     }).then(() => {
       setInit(true);
     });
-  }, []);
+  }, [particleId, options]);
 
-  const particlesLoaded = async (container?: Container): Promise<void> => {  };
+  const particlesLoaded = async (container?: Container): Promise<void> => { };
 
-  const particleOptions: ISourceOptions = useMemo(() => (options), [],);
+  const particleOptions: ISourceOptions = useMemo(() => (options), [options],);
 
   if (init) {
     return (
       <Particles
-        id="tsparticles"
+        id={particleId}
         particlesLoaded={particlesLoaded}
         options={particleOptions}
       />

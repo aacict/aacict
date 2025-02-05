@@ -6,7 +6,7 @@ function About() {
     <section className="section-conatiner flex" id="about">
       <PageName name="About" />
       <div
-        className="w-full z-20 h-64 bg-repeat bg-[url('../assets/images/dots.png')]"
+        className="w-full z-200 h-64 bg-repeat bg-[url('../assets/images/dots.png')] container m-auto px-24"
       >
         asdf
       </div>
