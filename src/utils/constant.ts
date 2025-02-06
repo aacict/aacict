@@ -1,5 +1,5 @@
 import { faFacebook, faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-export const MainMenuListItem: Array<string> = ["Intro", "About", "Expertise", "Academic", "Portfolio"]
+export const MainMenuListItem: Array<string> = ["Intro", "About", "Expertise", "Experience", "Portfolio"]
 
 export const FirstName = "Ashish"
 export const LastName = "Thapa"
@@ -30,7 +30,7 @@ export const Education = [
     },
 ]
 
-export const Experience = [
+export const Experiences = [
     {
         start: "2023",
         end: "2024",
@@ -38,6 +38,7 @@ export const Experience = [
         company: "Botree Inc.",
         position: "AI Software Engineer",
         location: "Barrie, Ontario",
+        responsibilities: []
     },
     {
         start: "2018",
@@ -46,6 +47,7 @@ export const Experience = [
         company: "Proshore Nepal Pvt. Ltd.",
         position: "NodeJs Developer",
         location: "Kathmandu, Nepal",
+        responsibilities: []
     },
     {
         start: "2018",
@@ -54,6 +56,7 @@ export const Experience = [
         company: "E-signature Pvt. Ltd.",
         position: "NodeJs Developer",
         location: "Kathmandu, Nepal",
+        responsibilities: []
     },
     {
         start: "2018",
@@ -62,6 +65,7 @@ export const Experience = [
         company: "Palmmind IT Consultancy Pvt. Ltd.",
         position: "Software Trainee",
         location: "Kathmandu, Nepal",
+        responsibilities: []
     },
 ]
 
@@ -127,10 +131,12 @@ export const projects = [
 ]
 
 export const ExpertiseContent = {
-    langFrames: "JavaScript, Nodejs, NestJs, ExpressJs, Typescript, Python, Mocha & Chai, React",
-    databases: "SQL [ MySQL, PostgreSQL], NOSQL [MongoDB], Redis",
-    otherToolsTechnologies: "REST API, Template Engines [ EJS ], Version Control [ Git ] , Amazon web services(AWS), Azure, Heroku, Third party API Integration, Docker, Postman, Swagger, Jira, Agile, Hugging Face, NLTK, OpenCV.",
-    relavantCoursework: "Cloud Computing, Database Management System (DBMS), Data Structures & Algorithms, Object-Oriented Programming (OOP), AI algorithms & Mathematics, Natural language Processing (NLP), Neural Networks (NN), Computer Vision, AI infrastructure & Architecture [ Azure, AWS ], Machine Learning Programming & Frameworks"
+    "Languages & Frameworks": "JavaScript, TypeScript, Python, SQL, Node.js, NestJS, Express.js, React, Mocha, Chai.",
+    "Databases": "MySQL, Postgres, MongoDB, Redis.",
+    "Cloud Platforms": `AWS, Azure, Heroku`,
+    "DevOps & Tools": "Git, Docker, Postman, Swagger, Jira, CI / CD(Bitbucket, GitLab), PowerBI, Tableau.",
+    "Data Science": "Hugging Face, TensorFlow, Scikit - learn, Spark.",
+    "Core": "OOP, Data Structures & Algorithms, Cloud Computing, AI Infrastructure & Architecture."
 }
 
 export const SocialLinks = [
