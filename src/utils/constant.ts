@@ -1,3 +1,4 @@
+import { faFacebook, faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 export const MainMenuListItem: Array<string> = ["Intro", "About", "Expertise", "Academic", "Portfolio"]
 
 export const FirstName = "Ashish"
@@ -132,7 +133,11 @@ export const ExpertiseContent = {
     relavantCoursework: "Cloud Computing, Database Management System (DBMS), Data Structures & Algorithms, Object-Oriented Programming (OOP), AI algorithms & Mathematics, Natural language Processing (NLP), Neural Networks (NN), Computer Vision, AI infrastructure & Architecture [ Azure, AWS ], Machine Learning Programming & Frameworks"
 }
 
-
+export const SocialLinks = [
+    { href: "https://www.facebook.com/aacict", icon: faFacebook, style: { color: "#74C0FC" } },
+    { href: "https://github.com/aacict/", icon: faGithub },
+    { href: "https://www.linkedin.com/in/aacict/", icon: faLinkedin, style: { color: "#74C0FC" } },
+];
 
 export const defaultParticleOption = {
     background: {

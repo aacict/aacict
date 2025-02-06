@@ -1,7 +1,11 @@
 import { Link } from "react-router-dom";
 import { MainMenuListItem } from "../../utils/constant";
 
-const NavDots = ({ currentPage }) => {
+interface NavDotsProps {
+    currentPage: string;
+}
+
+const NavDots = ({ currentPage }: NavDotsProps) => {
     return (
         <div className="fixed right-8 flex items-center h-screen justify-center bg-cover bg-center">
             <div className="flex flex-col items-center space-y-3">

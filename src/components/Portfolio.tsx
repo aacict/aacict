@@ -7,7 +7,7 @@ function Portfolio() {
   return (
     <section className="section-conatiner flex" id="portfolio">
       <PageName name="Portfolio" />
-      <div className="container m-auto px-24">
+      <div className="container portfolio-container m-auto px-24">
         <div className="flex flex-wrap">
           {projects.map((project, index) => {
             return <ProjectCard key={index} imageSrc={project.imageUrl} title={project.name} link={project.link} />
