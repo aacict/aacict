@@ -1,8 +1,20 @@
+import { useState } from "react"
 import { Experiences } from "../utils/constant"
 import NavDots from "./common/NavDots"
 import PageName from "./common/PageName"
+import ExperienceModal from "./Modal/ExperienceModal"
 
 function Experience() {
+    const [isOpen, setIsOpen] = useState(false)
+    const [responsibilties, setResponsibilities] = useState([])
+    const [projects, setProjects] = useState([])
+
+    const toggleModal = (resp, proj) => {
+        setIsOpen(!isOpen);
+        console.log(resp, proj)
+        setResponsibilities(resp);
+        setProjects(proj);
+    }
     return (
         <section className="section-conatiner flex" id="Experience">
             <PageName name="Experience" />
@@ -19,7 +31,7 @@ function Experience() {
                             <p className="text-black-500">{exp.location}</p>
                             <div className="relative top-16">
                                 <button
-                                    // onClick={toggleModal}
+                                    onClick={() => toggleModal(exp.responsibilities, exp.projects)}
                                     className="bg-green-500 text-gray"
                                 >
                                     View More
@@ -29,8 +41,8 @@ function Experience() {
                     ))}
                 </div>
             </div>
-
             <NavDots currentPage="Experience" />
+            <ExperienceModal isOpen={isOpen} toggleModal={toggleModal} responsibilties={responsibilties} projects={projects} />
         </section>
     )
 }
