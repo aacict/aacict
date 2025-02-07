@@ -1,4 +1,10 @@
-const ProjectCard = ({ imageSrc, title, link }) => {
+interface ProjectCardProps {
+    imageSrc: string;
+    title: string;
+    link: string;
+}
+
+const ProjectCard = ({ imageSrc, title, link }: ProjectCardProps) => {
     return (
         <div className="p-4">
             <div className="relative group w-60 h-40 overflow-hidden rounded-lg shadow-lg transition-transform duration-300 transform hover:scale-105">

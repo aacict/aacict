@@ -7,7 +7,7 @@ import { loadSlim } from "@tsparticles/slim"; // if you are going to use `loadSl
 
 interface ParticleProps {
   particleId: string;
-  options: ISourceOptions;
+  options: object;
 }
 
 const Particle = ({ particleId, options }: ParticleProps) => {

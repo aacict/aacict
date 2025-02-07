@@ -6,12 +6,11 @@ import ExperienceModal from "./Modal/ExperienceModal"
 
 function Experience() {
     const [isOpen, setIsOpen] = useState(false)
-    const [responsibilties, setResponsibilities] = useState([])
-    const [projects, setProjects] = useState([])
+    const [responsibilties, setResponsibilities] = useState(Array<string>())
+    const [projects, setProjects] = useState(Array<object>())
 
-    const toggleModal = (resp, proj) => {
+    const toggleModal = (resp: Array<string>, proj: Array<object>) => {
         setIsOpen(!isOpen);
-        console.log(resp, proj)
         setResponsibilities(resp);
         setProjects(proj);
     }

@@ -6,7 +6,7 @@ interface AboutProfileProps {
     href: string;
 }
 
-const AboutProfile: React.FC<AboutProfileProps> = ({ image, href }) => {
+const AboutProfile: React.FC<AboutProfileProps> = ({ href }) => {
     return (
         <div className="relative group">
             <div className="w-20 h-32 rounded-full shadow-lg object-cover "></div>
