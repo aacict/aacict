@@ -1,6 +1,6 @@
 import { faFacebook, faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import botreeimg from "../assets/images/botree.png"
-import orderXlImg from "../assets/images/orderXl.png"
+import orderXlImg from "../assets/images/orderXL.png"
 import surebirdImg from "../assets/images/surebird.png"
 import tiboImg from "../assets/images/tibo.png"
 import sdokyImg from "../assets/images/sdoky.png"
