@@ -5,7 +5,7 @@ import surebirdImg from "../assets/images/surebird.png"
 import tiboImg from "../assets/images/tibo.png"
 import sdokyImg from "../assets/images/sdoky.png"
 import ocarromImg from "../assets/images/ocarrom.png"
-import naradMuniImg from "../assets/images/naradmuni.png"
+import naradMuniImg from "../assets/images/Naradmuni.png"
 import laxmiBotImg from "../assets/images/laxmiddbot.png"
 export const MainMenuListItem: Array<string> = ["Intro", "About", "Expertise", "Experience", "Portfolio"]
 
