@@ -5,7 +5,7 @@ function Expertise() {
   return (
     <section className="section-conatiner flex" id="expertise">
       <PageName name="Expertise" />
-      <div className="container skills-container m-auto px-24" >
+      <div className="container all-section-container skills-container m-auto px-24" >
         {Object.entries(ExpertiseContent).map(([key, value], index) => (
           <div
             key={key}

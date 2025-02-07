@@ -4,7 +4,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faXmark } from "@fortawesome/free-solid-svg-icons"
 import Particle from "../common/particle"
 
-function SidebarModal({ isOpen, toggleBar }) {
+interface SidebarModalProps {
+  isOpen: boolean;
+  toggleBar: () => void;
+}
+
+function SidebarModal({ isOpen, toggleBar }: SidebarModalProps) {
   return (
     <div className={`fixed top-0 right-0 h-full w-96 transform transition-transform duration-300 
       ${isOpen ? "translate-x-0" : "translate-x-full hidden"}`}>

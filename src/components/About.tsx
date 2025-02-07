@@ -1,41 +1,23 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import NavDots from "./common/NavDots"
 import PageName from "./common/PageName"
-import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
-import { SoftSkills } from "../utils/constant";
+import AboutAcademic from "./features/About-academic"
+import AboutProfile from "./features/About-profile"
+import AboutStrength from "./features/About-strength"
 
 function About() {
   return (
     <section className="section-conatiner flex" id="about">
       <PageName name="About" />
       <div className="container all-section-container m-auto px-24" >
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-
-          <div className="flex justify-center">
-            <img
-              src="src\assets\images\profile.jpg"
-              alt="Profile"
-              className="w-70 h-auto rounded-lg shadow-lg"
-            />
-          </div>
-
-          <div className="text-gray-200">
-            <h2 className="mb-4 font-bold">
-              Let’s delve more into my strengths
-            </h2>
-            <div className="list-none list-inside space-y-2">
-              {SoftSkills.map((point, index) => (
-                <li key={index}>
-                  <FontAwesomeIcon icon={faCheckCircle} className="mr-2" />
-                  {point}</li>
-              ))}
-            </div>
-          </div>
+        <div className="flex justify-around space-x-4">
+          <AboutProfile image="src\assets\images\profile.jpg" href="src\assets\Ashish_Thapa_Resume.pdf" />
+          <AboutAcademic />
+          <AboutStrength />
         </div>
       </div>
       <NavDots currentPage="About" />
     </section>
   )
-}
 
+}
 export default About

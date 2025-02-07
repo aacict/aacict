@@ -18,7 +18,7 @@ export const Education = [
         completedYear: "Graduated Year: 2024",
         institution: "Georgian College",
         affiliation: "",
-        level: "Graduate Certificate in Artificial Intelligence: Architecture, Design, and Implementation",
+        level: "Graduate Certificate in Artificial Intelligence",
         location: "Ontario, Canada"
     },
     {
@@ -34,38 +34,61 @@ export const Experiences = [
     {
         start: "2023",
         end: "2024",
-        timeframe: "Jan 2024 to April 2024",
+        timeframe: "January 2024 - April 2024",
         company: "Botree Inc.",
         position: "AI Software Engineer",
         location: "Barrie, Ontario",
-        responsibilities: []
+        responsibilities: [
+            "Company overview: Botree Inc | Level-Up™ Training for Organizations.",
+            "Collaborated with a client organization as part of a capstone project, dedicating ~8 hours/week.",
+            "Designed and deployed AI-powered learning modules using React, Django, OpenAI models, LangChain, and Pinecone.",
+            "Built an architecture based on Retrieval-Augmented Generation (RAG), improving content delivery efficiency.",
+        ]
     },
     {
         start: "2018",
         end: "2019",
-        timeframe: "May 2021 to Sept. 2023",
-        company: "Proshore Nepal Pvt. Ltd.",
+        timeframe: "May 2021 - September 2023",
+        company: "Proshore Nepal",
         position: "NodeJs Developer",
         location: "Kathmandu, Nepal",
-        responsibilities: []
+        responsibilities: [
+            "Company overview: PROSHORE ready-to-code dev teams.",
+            "Developed scalable B2B and B2C web applications utilizing different JavaScript frameworks.",
+            "Managed server deployment, improved CI/CD using Bitbucket and GitLab to reduce deployment time.",
+            "Initiated update of lambda functions of old application to the latest version, improving code quality and decreasing urgent issue requests.",
+            "Integrated Salesforce & HubSpot API to automate data synchronization for an e-commerce platform, reducing manual tasks by 40%.",
+            "Mentored junior developers, conducted peer reviews, and led Scrum meetings to ensure on-time project delivery.",
+            "Built XML parsers to facilitate seamless data sharing across multiple platforms, reducing processing time.",
+        ]
     },
     {
         start: "2018",
         end: "2019",
-        timeframe: "Dec. 2019 to May 2021",
-        company: "E-signature Pvt. Ltd.",
+        timeframe: "December 2019 - May 2021",
+        company: "E-signature",
         position: "NodeJs Developer",
         location: "Kathmandu, Nepal",
-        responsibilities: []
+        responsibilities: [
+            "Company overview: Website Design and Development Company in Nepal | E-Signature.",
+            "Worked on full stack web development, their codebase architecture, and database design, planning, and critical analysis.",
+            "Implemented ETL to scrape data from different e-commerce and social platforms to develop analytical web applications.",
+            "Conducted unit and API testing with Mocha and Chai, improving test coverage by 25%.",
+        ]
     },
     {
         start: "2018",
         end: "2019",
-        timeframe: "Oct. 2018 to July 2019",
-        company: "Palmmind IT Consultancy Pvt. Ltd.",
+        timeframe: "October 2018 - July 2019",
+        company: "Palmmind IT Consultancy",
         position: "Software Trainee",
         location: "Kathmandu, Nepal",
-        responsibilities: []
+        responsibilities: [
+            "Company overview: Palmmind - Palm Mind Technology.",
+            "Built web applications using MEAN stack under the guidance of project leads.",
+            "Developed chatbots for Banking and Commercial sectors using Dialogflow.",
+            "Assisted in debugging and troubleshooting issues related to HTML, CSS, JavaScript, and Loopback frameworks.",
+        ]
     },
 ]
 
