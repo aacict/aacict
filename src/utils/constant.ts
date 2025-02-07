@@ -1,4 +1,12 @@
 import { faFacebook, faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import botreeimg from "../assets/images/botree.png"
+import orderXlImg from "../assets/images/orderXl.png"
+import surebirdImg from "../assets/images/surebird.png"
+import tiboImg from "../assets/images/tibo.png"
+import sdokyImg from "../assets/images/sdoky.png"
+import ocarromImg from "../assets/images/ocarrom.png"
+import naradMuniImg from "../assets/images/naradmuni.png"
+import laxmiBotImg from "../assets/images/laxmiddbot.png"
 export const MainMenuListItem: Array<string> = ["Intro", "About", "Expertise", "Experience", "Portfolio"]
 
 export const FirstName = "Ashish"
@@ -104,46 +112,47 @@ export const SoftSkills = [
     "Proficient in meticulously optimizing workflow efficiency, adeptly prioritizing tasks, and consistently meeting deadlines while upholding the highest standards of work quality."
 ]
 
+
 export const projects = [
     {
         name: "Learning Modules",
         link: "https://www.botreeinc.com/",
-        imageUrl: `src\\assets\\images\\botree.png`
+        imageUrl: botreeimg
     },
     {
         name: "OrderXL",
         link: "https://orderxl.com/",
-        imageUrl: "src\\assets\\images\\orderXL.png"
+        imageUrl: orderXlImg
     },
     {
         name: "Surebird",
         link: "https://www.surebird.nl/",
-        imageUrl: "src\\assets\\images\\Surebird.png"
+        imageUrl: surebirdImg
     },
     {
         name: "Tibo Energy",
         link: "https://tibo.energy/",
-        imageUrl: "src\\assets\\images\\tibo.png"
+        imageUrl: tiboImg
     },
     {
         name: "Sdoky",
         link: "https://www.sdoky.com/en",
-        imageUrl: "src\\assets\\images\\sdoky.png"
+        imageUrl: sdokyImg
     },
     {
         name: "ORANGE STUDIO",
         link: "https://ankaek.com/our-games",
-        imageUrl: "src\\assets\\images\\ocarrom.png"
+        imageUrl: ocarromImg
     },
     {
         name: "Narad Muni",
         link: "https://www.facebook.com/NaradMuniApp/",
-        imageUrl: "src\\assets\\images\\Naradmuni.png"
+        imageUrl: naradMuniImg
     },
     {
         name: "Chatbots",
         link: "https://www.laxmisunrise.com/",
-        imageUrl: "src\\assets\\images\\laxmiddbot.png"
+        imageUrl: laxmiBotImg
     },
     // {
     //     name:"My Social View",
