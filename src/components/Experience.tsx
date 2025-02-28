@@ -12,7 +12,7 @@ interface Project {
 
 function Experience() {
     const [isOpen, setIsOpen] = useState(false)
-    const [responsibilties, setResponsibilities] = useState(Array<string>())
+    const [responsibilities, setResponsibilities] = useState(Array<string>())
     const [companyName, SetCompanyName] = useState(String)
     const [projects, setProjects] = useState(Array<Project>())
 
@@ -49,7 +49,7 @@ function Experience() {
                 </div>
             </div>
             <NavDots currentPage="Experience" />
-            <ExperienceModal isOpen={isOpen} companyName={companyName} toggleModal={toggleModal} responsibilties={responsibilties} projects={projects} />
+            <ExperienceModal isOpen={isOpen} companyName={companyName} toggleModal={toggleModal} responsibilties={responsibilities} projects={projects} />
         </section>
     )
 }
