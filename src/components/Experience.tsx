@@ -4,14 +4,22 @@ import NavDots from "./common/NavDots"
 import PageName from "./common/PageName"
 import ExperienceModal from "./Modal/ExperienceModal"
 
+interface Project {
+    name: string;
+    imageUrl: string;
+    link: string;
+}
+
 function Experience() {
     const [isOpen, setIsOpen] = useState(false)
     const [responsibilties, setResponsibilities] = useState(Array<string>())
-    const [projects, setProjects] = useState(Array<object>())
+    const [companyName, SetCompanyName] = useState(String)
+    const [projects, setProjects] = useState(Array<Project>())
 
-    const toggleModal = (resp: Array<string>, proj: Array<object>) => {
+    const toggleModal = (resp: Array<string>, proj: Array<Project>, companyName: string) => {
         setIsOpen(!isOpen);
         setResponsibilities(resp);
+        SetCompanyName(companyName);
         setProjects(proj);
     }
     return (
@@ -30,7 +38,7 @@ function Experience() {
                             <p className="text-black-500">{exp.location}</p>
                             <div className="relative top-16">
                                 <button
-                                    onClick={() => toggleModal(exp.responsibilities, exp.projects)}
+                                    onClick={() => toggleModal(exp.responsibilities, exp.projects, exp.company)}
                                     className="bg-green-500 text-gray"
                                 >
                                     View More
@@ -41,7 +49,7 @@ function Experience() {
                 </div>
             </div>
             <NavDots currentPage="Experience" />
-            <ExperienceModal isOpen={isOpen} toggleModal={toggleModal} responsibilties={responsibilties} projects={projects} />
+            <ExperienceModal isOpen={isOpen} companyName={companyName} toggleModal={toggleModal} responsibilties={responsibilties} projects={projects} />
         </section>
     )
 }

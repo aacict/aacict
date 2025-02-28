@@ -47,12 +47,16 @@ export const Experiences = [
         position: "AI Software Engineer",
         location: "Barrie, Ontario",
         responsibilities: [
-            `<p>Company overview:<a href="https://www.palmmind.com" class="underline" target="_blank" rel="noopener noreferrer">Botree Inc | Level-Up™ Training for Organizations</a>.</p>`,
+            `<p><a href="https://www.palmmind.com" class="underline" target="_blank" rel="noopener noreferrer">Botree Inc | Level-Up™ Training for Organizations</a>.</p>`,
             "Collaborated with a client organization as part of a capstone project, dedicating ~8 hours/week.",
             "Designed and deployed AI-powered learning modules using React, Django, OpenAI models, LangChain, and Pinecone.",
             "Built an architecture based on Retrieval-Augmented Generation (RAG), improving content delivery efficiency.",
         ],
-        projects: []
+        projects: [{
+            name: "Learning Modules",
+            link: "https://www.botreeinc.com/",
+            imageUrl: botreeimg
+        },]
     },
     {
         start: "2018",
@@ -62,7 +66,7 @@ export const Experiences = [
         position: "NodeJs Developer",
         location: "Kathmandu, Nepal",
         responsibilities: [
-            `<p>Company overview:<a href="https://www.palmmind.com" class="underline" target="_blank" rel="noopener noreferrer">PROSHORE ready-to-code dev teams</a>.</p>`,
+            `<p><a href="https://www.palmmind.com" class="underline" target="_blank" rel="noopener noreferrer">PROSHORE ready-to-code dev teams</a>.</p>`,
             "Developed scalable B2B and B2C web applications utilizing different JavaScript frameworks.",
             "Managed server deployment, improved CI/CD using Bitbucket and GitLab to reduce deployment time.",
             "Initiated update of lambda functions of old application to the latest version, improving code quality and decreasing urgent issue requests.",
@@ -70,7 +74,21 @@ export const Experiences = [
             "Mentored junior developers, conducted peer reviews, and led Scrum meetings to ensure on-time project delivery.",
             "Built XML parsers to facilitate seamless data sharing across multiple platforms, reducing processing time.",
         ],
-        projects: []
+        projects: [{
+            name: "OrderXL",
+            link: "https://orderxl.com/",
+            imageUrl: orderXlImg
+        },
+        {
+            name: "Surebird",
+            link: "https://www.surebird.nl/",
+            imageUrl: surebirdImg
+        },
+        {
+            name: "Tibo Energy",
+            link: "https://tibo.energy/",
+            imageUrl: tiboImg
+        },]
     },
     {
         start: "2018",
@@ -80,12 +98,22 @@ export const Experiences = [
         position: "NodeJs Developer",
         location: "Kathmandu, Nepal",
         responsibilities: [
-            `<p>Company overview:<a href="https://www.palmmind.com" class="underline" target="_blank" rel="noopener noreferrer">Website Design and Development Company in Nepal | E-Signature</a>.</p>`,
+            `<p><a href="https://www.palmmind.com" class="underline" target="_blank" rel="noopener noreferrer">Website Design and Development Company in Nepal | E-Signature</a>.</p>`,
             "Worked on full stack web development, their codebase architecture, and database design, planning, and critical analysis.",
             "Implemented ETL to scrape data from different e-commerce and social platforms to develop analytical web applications.",
             "Conducted unit and API testing with Mocha and Chai, improving test coverage by 25%.",
         ],
-        projects: []
+        projects: [{
+            name: "Sdoky",
+            link: "https://www.sdoky.com/en",
+            imageUrl: sdokyImg
+        },
+
+        {
+            name: "Narad Muni",
+            link: "https://www.facebook.com/NaradMuniApp/",
+            imageUrl: naradMuniImg
+        },]
     },
     {
         start: "2018",
@@ -95,12 +123,16 @@ export const Experiences = [
         position: "Software Trainee",
         location: "Kathmandu, Nepal",
         responsibilities: [
-            `<p>Company overview:<a href="https://www.palmmind.com" class="underline" target="_blank" rel="noopener noreferrer">Palmmind - Palm Mind Technology</a>.</p>`,
+            `<p><a href="https://www.palmmind.com" class="underline" target="_blank" rel="noopener noreferrer">Palmmind - Palm Mind Technology</a>.</p>`,
             "Built web applications using MEAN stack under the guidance of project leads.",
             "Developed chatbots for Banking and Commercial sectors using Dialogflow.",
             "Assisted in debugging and troubleshooting issues related to HTML, CSS, JavaScript, and Loopback frameworks.",
         ],
-        projects: []
+        projects: [{
+            name: "Chatbots",
+            link: "https://www.laxmisunrise.com/",
+            imageUrl: laxmiBotImg
+        },]
 
     },
 ]
@@ -115,44 +147,11 @@ export const SoftSkills = [
 
 export const projects = [
     {
-        name: "Learning Modules",
-        link: "https://www.botreeinc.com/",
-        imageUrl: botreeimg
-    },
-    {
-        name: "OrderXL",
-        link: "https://orderxl.com/",
-        imageUrl: orderXlImg
-    },
-    {
-        name: "Surebird",
-        link: "https://www.surebird.nl/",
-        imageUrl: surebirdImg
-    },
-    {
-        name: "Tibo Energy",
-        link: "https://tibo.energy/",
-        imageUrl: tiboImg
-    },
-    {
-        name: "Sdoky",
-        link: "https://www.sdoky.com/en",
-        imageUrl: sdokyImg
-    },
-    {
         name: "ORANGE STUDIO",
         link: "https://ankaek.com/our-games",
-        imageUrl: ocarromImg
-    },
-    {
-        name: "Narad Muni",
-        link: "https://www.facebook.com/NaradMuniApp/",
-        imageUrl: naradMuniImg
-    },
-    {
-        name: "Chatbots",
-        link: "https://www.laxmisunrise.com/",
-        imageUrl: laxmiBotImg
+        imageUrl: ocarromImg,
+        github: "",
+        detail: ""
     },
     // {
     //     name:"My Social View",
