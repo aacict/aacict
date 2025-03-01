@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { } from "react";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLink } from "@fortawesome/free-solid-svg-icons";
@@ -8,12 +8,12 @@ interface ProjectCardProps {
     title: string;
     link: string;
     github: string;
-    detail: string;
+    detail?: string;
 }
 
 
-const ProjectCard: React.FC<ProjectCardProps> = ({ imageSrc, title, link, github, detail }) => {
-    const [isOpen, setIsOpen] = useState(false)
+const ProjectCard: React.FC<ProjectCardProps> = ({ imageSrc, title, link, github }) => {
+    // const [isOpen, setIsOpen] = useState(false)
 
     return (
         <div className="p-4">
