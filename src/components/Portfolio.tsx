@@ -10,7 +10,7 @@ function Portfolio() {
       <div className="container portfolio-container m-auto px-24">
         <div className="flex flex-wrap">
           {projects.map((project, index) => {
-            return <ProjectCard key={index} imageSrc={project.imageUrl} title={project.name} link={project.link} />
+            return <ProjectCard key={index} imageSrc={project.imageUrl} title={project.name} link={project.link} github={project.github} detail={project.detail} />
           })}
         </div>
       </div>

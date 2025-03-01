@@ -7,6 +7,10 @@ import sdokyImg from "../assets/images/sdoky.png"
 import ocarromImg from "../assets/images/ocarrom.png"
 import naradMuniImg from "../assets/images/Naradmuni.png"
 import laxmiBotImg from "../assets/images/laxmiddbot.png"
+import personalProtfolio from "../assets/images/personalProtfolio.png"
+import blackp from "../assets/images/blackp.png"
+import ai from "../assets/images/ai.jpg"
+import sentiment from "../assets/images/sentiment.jpg"
 export const MainMenuListItem: Array<string> = ["Intro", "About", "Expertise", "Experience", "Portfolio"]
 
 export const FirstName = "Ashish"
@@ -132,6 +136,11 @@ export const Experiences = [
             name: "Chatbots",
             link: "https://www.laxmisunrise.com/",
             imageUrl: laxmiBotImg
+        },
+        {
+            name: "CMS",
+            link: "",
+            imageUrl: blackp
         },]
 
     },
@@ -146,6 +155,28 @@ export const SoftSkills = [
 
 
 export const projects = [
+
+    {
+        name: "Personal Portfolio",
+        link: "http://thapaashish.com.np/",
+        imageUrl: personalProtfolio,
+        github: "https://github.com/aacict/aacict",
+        detail: ""
+    },
+    {
+        name: "AI & ML Projects",
+        link: "",
+        imageUrl: ai,
+        github: "https://github.com/aacict/AI-Machine-Learning",
+        detail: ""
+    },
+    {
+        name: "Scapper Modules",
+        link: "",
+        imageUrl: blackp,
+        github: "https://github.com/aacict/scrapper-modules",
+        detail: ""
+    },
     {
         name: "ORANGE STUDIO",
         link: "https://ankaek.com/our-games",
@@ -153,17 +184,13 @@ export const projects = [
         github: "",
         detail: ""
     },
-    // {
-    //     name:"My Social View",
-    //     link:"",
-    //     imageUrl: "src\\assets\\images\\blackp.png"
-    // },
-    // {
-    //     name:"Worker pros",
-    //     link:"",
-    //     imageUrl: "src\\assets\\images\\blackp.png"
-    // },
-
+    {
+        name: "News Sentiment Analysis",
+        link: "",
+        imageUrl: sentiment,
+        github: "https://github.com/aacict/news_sentiment_analysis",
+        detail: ""
+    }
 ]
 
 export const ExpertiseContent = {

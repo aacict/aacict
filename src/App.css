@@ -84,6 +84,18 @@
     transition: all 0.3s;
 }
 
+#portfolio button {
+    background-color: #ffd700;
+    color: #000;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
 @keyframes fadeInUp {
     0% {
         opacity: 0;
