@@ -3,13 +3,14 @@ import { MainMenuListItem, SidebarParticleOption } from "../../utils/constant"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faXmark } from "@fortawesome/free-solid-svg-icons"
 import Particle from "../common/particle"
+import { useDispatch, useSelector } from "react-redux"
+import { toggleBar } from "../../redux/sidebarSlice"
 
-interface SidebarModalProps {
-  isOpen: boolean;
-  toggleBar: () => void;
-}
 
-const SidebarModal: React.FC<SidebarModalProps> = ({ isOpen, toggleBar }) => {
+
+const SidebarModal: React.FC = () => {
+  const isOpen = useSelector((state: { sidebarReducer: { isOpen: boolean } }) => state.sidebarReducer.isOpen)
+  const dispatch = useDispatch()
 
   return (
     <div className={`fixed top-0 right-0 h-full w-96 transform transition-transform duration-300 
@@ -18,7 +19,7 @@ const SidebarModal: React.FC<SidebarModalProps> = ({ isOpen, toggleBar }) => {
         <Particle particleId="ts-particle-sidebar" options={SidebarParticleOption} />
       </div>
       <div  >
-        <FontAwesomeIcon className="relative cursor-pointer z-20 text-black" style={{ padding: "14px 14px 14px 90%" }} icon={faXmark} onClick={toggleBar} size="2x" />
+        <FontAwesomeIcon className="relative cursor-pointer z-20 text-black" style={{ padding: "14px 14px 14px 90%" }} icon={faXmark} onClick={() => dispatch(toggleBar())} size="2x" />
         <nav className="pt-8 pb-[14px] z-30" id="menu">
           <ul id="mainMenu" className="pl-12 pt-8">
             {MainMenuListItem.map((item, index) => {

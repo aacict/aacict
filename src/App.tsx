@@ -8,23 +8,27 @@ import Expertise from './components/Expertise';
 import Portfolio from './components/Portfolio';
 import Experience from './components/Experience';
 import NotFound from './components/404';
+import store from "./redux/store";
+import { Provider } from "react-redux";
 
 
 function App() {
   return (
-    <BrowserRouter>
-      <Nav></Nav>
-      <Routes>
-        <Route path='/' element={<Intro />}></Route>
-        <Route path='/intro' element={<Intro />}></Route>
-        <Route path='/about' element={<About />}></Route>
-        <Route path='/expertise' element={<Expertise />}></Route>
-        {/* <Route path='/academic' element={<Academic />}></Route> */}
-        <Route path='/experience' element={<Experience />}></Route>
-        <Route path='/portfolio' element={<Portfolio />}></Route>
-        <Route path='*' element={<NotFound />} /> {/* Catch-all route */}
-      </Routes>
-    </BrowserRouter>
+    <Provider store={store}>
+      <BrowserRouter>
+        <Nav></Nav>
+        <Routes>
+          <Route path='/' element={<Intro />}></Route>
+          <Route path='/intro' element={<Intro />}></Route>
+          <Route path='/about' element={<About />}></Route>
+          <Route path='/expertise' element={<Expertise />}></Route>
+          {/* <Route path='/academic' element={<Academic />}></Route> */}
+          <Route path='/experience' element={<Experience />}></Route>
+          <Route path='/portfolio' element={<Portfolio />}></Route>
+          <Route path='*' element={<NotFound />} /> {/* Catch-all route */}
+        </Routes>
+      </BrowserRouter>
+    </Provider>
   )
 }
 
