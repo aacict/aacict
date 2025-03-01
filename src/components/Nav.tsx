@@ -1,7 +1,7 @@
 import SidebarModal from "./Modal/SidebarModal"
 import { useState } from "react"
 
-function App() {
+const Nav = () => {
   const [isOpen, setIsOpen] = useState(false)
   const toggleBar = () => {
     setIsOpen(!isOpen);
@@ -18,4 +18,4 @@ function App() {
   )
 }
 
-export default App
+export default Nav

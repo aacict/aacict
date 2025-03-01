@@ -9,7 +9,8 @@ interface SidebarModalProps {
   toggleBar: () => void;
 }
 
-function SidebarModal({ isOpen, toggleBar }: SidebarModalProps) {
+const SidebarModal: React.FC<SidebarModalProps> = ({ isOpen, toggleBar }) => {
+
   return (
     <div className={`fixed top-0 right-0 h-full w-96 transform transition-transform duration-300 
       ${isOpen ? "translate-x-0" : "translate-x-full hidden"}`}>
