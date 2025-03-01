@@ -8,4 +8,4 @@ Software Developer | Cloud Computing | Data Science, AI & Machine Learning Enthu
 
 ### 📬 **Connect with Me**  
 📧 Email: [aacict@gmail.com](#)  
-🌐 [Website](https://thapaashish.com.np) | [LinkedIn](https://www.linkedin.com/in/aacict/) | [facebook]()  
+🌐 [Website](https://thapaashish.com.np) | [LinkedIn](https://www.linkedin.com/in/aacict/) | [facebook](https://www.facebook.com/aacict)  
