@@ -1,10 +1,12 @@
+import { useSelector } from "react-redux"
 import { Education } from "../utils/constant"
 import NavDots from "./common/NavDots"
 import PageName from "./common/PageName"
 
 function Academic() {
+  const isSidebarOpen = useSelector((state: { sidebarReducer: { isOpen: boolean } }) => state.sidebarReducer.isOpen)
   return (
-    <section className="section-conatiner flex" id="academic">
+    <section className={`${isSidebarOpen ? "w-10/12" : "w-full"} section-conatiner flex`} id="academic">
       <PageName name="Academic" />
       <div className="container skills-container m-auto px-24" >
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

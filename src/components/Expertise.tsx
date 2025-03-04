@@ -1,9 +1,12 @@
+import { useSelector } from "react-redux";
 import { ExpertiseContent } from "../utils/constant";
 import NavDots from "./common/NavDots";
 import PageName from "./common/PageName";
 function Expertise() {
+  const isSidebarOpen = useSelector((state: { sidebarReducer: { isOpen: boolean } }) => state.sidebarReducer.isOpen)
+
   return (
-    <section className="section-conatiner flex" id="expertise">
+    <section className={`${isSidebarOpen ? "w-10/12" : "w-full"} section-conatiner flex`} id="expertise">
       <PageName name="Expertise" />
       <div className="container all-section-container skills-container m-auto px-24" >
         {Object.entries(ExpertiseContent).map(([key, value], index) => (

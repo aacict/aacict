@@ -3,10 +3,13 @@ import { Designation, FirstName, LastName, PersonalStatement, SocialLinks } from
 import NavDots from "./common/NavDots"
 import PageName from "./common/PageName"
 import { ReactTyped } from "react-typed";
+import { useSelector } from "react-redux";
 
 function Intro() {
+  const isOpen = useSelector((state: { sidebarReducer: { isOpen: boolean } }) => state.sidebarReducer.isOpen)
+
   return (
-    <section className="section-conatiner flex" id="intro">
+    <section className={`${isOpen ? "w-10/12" : "w-full"} section-conatiner flex`} id="intro">
       <PageName name="Intro" />
       <div className="container all-section-container m-auto px-24 z-10">
         <div id="typed-strings">

@@ -3,6 +3,7 @@ import { Experiences } from "../utils/constant"
 import NavDots from "./common/NavDots"
 import PageName from "./common/PageName"
 import ExperienceModal from "./Modal/ExperienceModal"
+import { useSelector } from "react-redux"
 
 interface Project {
     name: string;
@@ -15,6 +16,8 @@ function Experience() {
     const [responsibilities, setResponsibilities] = useState(Array<string>())
     const [companyName, SetCompanyName] = useState(String)
     const [projects, setProjects] = useState(Array<Project>())
+    const isSidebarOpen = useSelector((state: { sidebarReducer: { isOpen: boolean } }) => state.sidebarReducer.isOpen)
+
 
     const toggleModal = (resp: Array<string>, proj: Array<Project>, companyName: string) => {
         setIsOpen(!isOpen);
@@ -23,7 +26,7 @@ function Experience() {
         setProjects(proj);
     }
     return (
-        <section className="section-conatiner flex" id="Experience">
+        <section className={`${isSidebarOpen ? "w-10/12" : "w-full"} section-conatiner flex`} id="Experience">
             <PageName name="Experience" />
             <div className="container all-section-container m-auto px-24" >
                 <div className="flex justify-around items-center space-x-4">

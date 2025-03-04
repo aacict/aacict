@@ -11,7 +11,7 @@ import NotFound from './components/404';
 import store from "./redux/store";
 import { Provider } from "react-redux";
 import { QueryClient, QueryClientProvider, } from '@tanstack/react-query'
-import QueryTest from './components/queryTest';
+import QueryTest from './components/QueryTest';
 const queryClient = new QueryClient()
 
 function App() {

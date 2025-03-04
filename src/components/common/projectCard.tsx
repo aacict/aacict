@@ -13,7 +13,6 @@ interface ProjectCardProps {
 
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ imageSrc, title, link, github }) => {
-    // const [isOpen, setIsOpen] = useState(false)
 
     return (
         <div className="p-4">

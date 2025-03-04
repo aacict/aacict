@@ -5,10 +5,12 @@ import PageName from "./common/PageName"
 import ProjectCard from "./common/projectCard"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faFlask } from "@fortawesome/free-solid-svg-icons"
+import { useSelector } from "react-redux"
 
 function Portfolio() {
+  const isSidebarOpen = useSelector((state: { sidebarReducer: { isOpen: boolean } }) => state.sidebarReducer.isOpen)
   return (
-    <section className="section-conatiner flex" id="portfolio">
+    <section className={`${isSidebarOpen ? "w-10/12" : "w-full"} section-conatiner flex`} id="portfolio">
       <PageName name="Portfolio" />
       <div className="container portfolio-container m-auto px-24">
         <div className="flex flex-wrap project-card">
