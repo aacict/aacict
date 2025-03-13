@@ -1,6 +1,6 @@
 import { useDispatch } from "react-redux"
-import SidebarModal from "./Modal/SidebarModal"
-import { toggleBar } from "../redux/sidebarSlice"
+import SidebarModal from "../modal/SidebarModal"
+import { toggleBar } from "../../redux/sidebarSlice"
 
 const Nav = () => {
   const dispatch = useDispatch()

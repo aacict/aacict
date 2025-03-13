@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { Designation, FirstName, LastName, PersonalStatement, SocialLinks } from "../utils/constant"
-import NavDots from "./common/NavDots"
-import PageName from "./common/PageName"
+import { Designation, FirstName, LastName, PersonalStatement, SocialLinks } from "../../utils/constant"
+import NavDots from "../common/NavDots"
+import PageName from "../common/PageName"
 import { ReactTyped } from "react-typed";
 import { useSelector } from "react-redux";
 

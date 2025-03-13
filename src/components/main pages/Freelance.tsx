@@ -1,7 +1,7 @@
 import { useSelector } from "react-redux"
-import { Education } from "../utils/constant"
-import NavDots from "./common/NavDots"
-import PageName from "./common/PageName"
+import { Education } from "../../utils/constant"
+import NavDots from "../common/NavDots"
+import PageName from "../common/PageName"
 
 function Academic() {
   const isSidebarOpen = useSelector((state: { sidebarReducer: { isOpen: boolean } }) => state.sidebarReducer.isOpen)

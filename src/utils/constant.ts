@@ -165,21 +165,28 @@ export const projects = [
     },
     {
         name: "AI & ML Projects",
-        link: "",
+        link: "https://github.com/aacict/AI-Machine-Learning",
         imageUrl: ai,
         github: "https://github.com/aacict/AI-Machine-Learning",
         detail: "Data science, Machine learning, and AI projects covering topics such as reinforcement learning, NLP, classification, regression, computer vision, and Neural Networks."
     },
     {
-        name: "Scapper Modules",
+        name: "Crime Data Analysis",
         link: "",
+        imageUrl: blackp,
+        github: "https://github.com/swekriti12/Crime-Statistics",
+        detail: "Big Data project analyzing crime data in the canada using Powerbi and Advance Python. The project involved data cleaning, transformation, and visualization to identify crime trends and patterns."
+    },
+    {
+        name: "Scapper Modules",
+        link: "https://github.com/aacict/scrapper-modules",
         imageUrl: blackp,
         github: "https://github.com/aacict/scrapper-modules",
         detail: "Collection of web scrapers for extracting data from Facebook, Instagram, and restaurant review platforms like Quandoo, The Fork, and OpenTable. Built with Apify, Cheerio, and Axios for seamless data retrieval."
     },
     {
         name: "News Sentiment Analysis",
-        link: "",
+        link: `${import.meta.env.VITE_APP_URL}/news_sentiment_analysis`,
         imageUrl: sentiment,
         github: "https://github.com/aacict/news_sentiment_analysis",
         detail: "Sentiment analysis tool for news articles, leveraging pre-trainned model from hugging face. Ideal for trend analysis and media monitoring"
