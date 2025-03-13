@@ -1,5 +1,5 @@
 import React from 'react';
-import { SoftSkills } from '../../utils/constant';
+import { SoftSkills } from '../../../utils/constant';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheckCircle } from '@fortawesome/free-solid-svg-icons';
 

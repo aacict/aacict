@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { MainMenuListItem } from "../../utils/constant";
+import { MainMenuListItem } from "../../../utils/constant";
 
 interface NavDotsProps {
     currentPage: string;

@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom"
-import { MainMenuListItem, SidebarParticleOption } from "../../utils/constant"
+import { MainMenuListItem, SidebarParticleOption } from "../../../utils/constant"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faXmark } from "@fortawesome/free-solid-svg-icons"
 import Particle from "../common/particle"
 import { useDispatch, useSelector } from "react-redux"
-import { toggleBar } from "../../redux/sidebarSlice"
+import { toggleBar } from "../../../redux/sidebarSlice"
 
 
 

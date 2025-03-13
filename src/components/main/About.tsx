@@ -1,9 +1,9 @@
 import { useSelector } from "react-redux"
-import NavDots from "../common/NavDots"
-import PageName from "../common/PageName"
-import AboutAcademic from "../features/About-academic"
-import AboutProfile from "../features/About-profile"
-import AboutStrength from "../features/About-strength"
+import NavDots from "./common/NavDots"
+import PageName from "./common/PageName"
+import AboutAcademic from "./features/About-academic"
+import AboutProfile from "./features/About-profile"
+import AboutStrength from "./features/About-strength"
 
 function About() {
   const isSidebarOpen = useSelector((state: { sidebarReducer: { isOpen: boolean } }) => state.sidebarReducer.isOpen)

@@ -1,7 +1,7 @@
 import { useSelector } from "react-redux";
 import { ExpertiseContent } from "../../utils/constant";
-import NavDots from "../common/NavDots";
-import PageName from "../common/PageName";
+import NavDots from "./common/NavDots";
+import PageName from "./common/PageName";
 function Expertise() {
   const isSidebarOpen = useSelector((state: { sidebarReducer: { isOpen: boolean } }) => state.sidebarReducer.isOpen)
 

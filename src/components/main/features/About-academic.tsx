@@ -1,5 +1,5 @@
 import React from 'react';
-import { Education } from '../../utils/constant';
+import { Education } from '../../../utils/constant';
 import { GraduationCap } from 'lucide-react';
 
 const AboutAcademic: React.FC = () => {

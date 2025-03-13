@@ -1,5 +1,5 @@
 import { Outlet } from "react-router-dom"
-import Nav from "../common/Nav"
+import Nav from "../main/common/Nav"
 
 const PortfolioLayout = () => {
     return (
