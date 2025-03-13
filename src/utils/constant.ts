@@ -190,7 +190,14 @@ export const projects = [
         imageUrl: sentiment,
         github: "https://github.com/aacict/news_sentiment_analysis",
         detail: "Sentiment analysis tool for news articles, leveraging pre-trainned model from hugging face. Ideal for trend analysis and media monitoring"
-    }
+    },
+    {
+        name: "Stock data Analysis",
+        link: "https://stock-data-analytics-dy9sxvvbtwwstlffhzcaf6.streamlit.app/",
+        imageUrl: ocarromImg,
+        github: "https://github.com/swekriti12/Stock-Data-Analytics",
+        detail: "Stock data analysis and visualization tool built with Streamlit, Plotly, and Pandas. The tool provides insights into stock trend, stock performance, market trends, related news and their sentiment analysis."
+    },
 ]
 
 export const ExpertiseContent = {
