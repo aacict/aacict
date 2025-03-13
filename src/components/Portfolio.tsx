@@ -26,11 +26,11 @@ function Portfolio() {
             return <ProjectCard key={index} imageSrc={project.imageUrl} title={project.name} link={project.link} github={project.github} detail={project.detail} />
           })}
           <div>
-            <Tooltip id="project-tooltip" place="top" />
+            <Tooltip id="project-tooltip" place="bottom" />
           </div>
         </div>
         <div className="flex justify-end py-4">
-          <Link to={{ pathname: "/experience" }}>
+          <Link to={{ pathname: "/professional" }}>
             <button className="dropping-btn flex items-center justify-center px-4 py-2 text-white text-xl bg-transparent border-2 border-white rounded-full hover:bg-black transition">
               <FontAwesomeIcon icon={faFlask} />
             </button>
