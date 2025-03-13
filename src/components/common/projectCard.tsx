@@ -1,7 +1,7 @@
 import React, { } from "react";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLink } from "@fortawesome/free-solid-svg-icons";
+import { faCircleQuestion, faLink } from "@fortawesome/free-solid-svg-icons";
 
 interface ProjectCardProps {
     imageSrc: string;
@@ -12,7 +12,7 @@ interface ProjectCardProps {
 }
 
 
-const ProjectCard: React.FC<ProjectCardProps> = ({ imageSrc, title, link, github }) => {
+const ProjectCard: React.FC<ProjectCardProps> = ({ imageSrc, title, link, github, detail }) => {
 
     return (
         <div className="p-4">
@@ -44,10 +44,15 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ imageSrc, title, link, github
                             <FontAwesomeIcon icon={faLink} />
 
                         </a>
+                        <a className="px-4 py-2 rounded-full text-white font-semibold hover:bg-blue-600 transition mb-2 flex items-center justify-center"
+                            data-tooltip-id="project-tooltip"
+                            data-tooltip-content={detail}>
+                            <FontAwesomeIcon icon={faCircleQuestion} />
+                        </a>
                     </div>
-                    <button className="bg-green-500 text-gray" onClick={() => { }}>
+                    {/* <button className="bg-green-500 text-gray" onClick={() => { toggleModal() }}>
                         View More
-                    </button>
+                    </button> */}
                 </div>
             </div>
         </div>

@@ -3,10 +3,10 @@ import React from 'react';
 interface ProjectModalProps {
     isOpen: boolean;
     toggleModal: () => void;
-    description: string;
+    // description: string;
 }
 
-const ProjectModal: React.FC<ProjectModalProps> = ({ isOpen, toggleModal, description }) => {
+const ProjectModal: React.FC<ProjectModalProps> = ({ isOpen, toggleModal }) => {
     if (!isOpen) return null;
 
     return (
@@ -21,7 +21,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ isOpen, toggleModal, descri
                         </div>
                         <ol className="">
                             <li>
-                                <span>"{description}"</span>
+                                <span>"adsd"</span>
                             </li>
                         </ol>
                     </div>

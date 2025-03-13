@@ -26,8 +26,8 @@ function App() {
             <Route path='/about' element={<About />}></Route>
             <Route path='/expertise' element={<Expertise />}></Route>
             {/* <Route path='/academic' element={<Academic />}></Route> */}
-            <Route path='/experience' element={<Experience />}></Route>
-            <Route path='/portfolio' element={<Portfolio />}></Route>
+            <Route path='/professional' element={<Experience />}></Route>
+            <Route path='/personal' element={<Portfolio />}></Route>
             <Route path='/test' element={<QueryTest />}></Route>
             <Route path='*' element={<NotFound />} /> {/* Catch-all route */}
           </Routes>

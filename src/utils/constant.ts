@@ -11,7 +11,7 @@ import personalProtfolio from "../assets/images/personalProtfolio.png"
 import blackp from "../assets/images/blackp.png"
 import ai from "../assets/images/ai.jpg"
 import sentiment from "../assets/images/sentiment.jpg"
-export const MainMenuListItem: Array<string> = ["Intro", "About", "Expertise", "Experience", "Portfolio"]
+export const MainMenuListItem: Array<string> = ["Intro", "About", "Expertise", "Professional", "Personal"]
 
 export const FirstName = "Ashish"
 export const LastName = "Thapa"
@@ -161,35 +161,28 @@ export const projects = [
         link: "http://thapaashish.com.np/",
         imageUrl: personalProtfolio,
         github: "https://github.com/aacict/aacict",
-        detail: ""
+        detail: "My personal portfolio website built with React, TypeScript, Tailwind CSS and hosted on Netlify. Also includes application of react router, react query, and particle.js."
     },
     {
         name: "AI & ML Projects",
         link: "",
         imageUrl: ai,
         github: "https://github.com/aacict/AI-Machine-Learning",
-        detail: ""
+        detail: "Data science, Machine learning, and AI projects covering topics such as reinforcement learning, NLP, classification, regression, computer vision, and Neural Networks."
     },
     {
         name: "Scapper Modules",
         link: "",
         imageUrl: blackp,
         github: "https://github.com/aacict/scrapper-modules",
-        detail: ""
-    },
-    {
-        name: "ORANGE STUDIO",
-        link: "https://ankaek.com/our-games",
-        imageUrl: ocarromImg,
-        github: "",
-        detail: ""
+        detail: "Collection of web scrapers for extracting data from Facebook, Instagram, and restaurant review platforms like Quandoo, The Fork, and OpenTable. Built with Apify, Cheerio, and Axios for seamless data retrieval."
     },
     {
         name: "News Sentiment Analysis",
         link: "",
         imageUrl: sentiment,
         github: "https://github.com/aacict/news_sentiment_analysis",
-        detail: ""
+        detail: "Sentiment analysis tool for news articles, leveraging pre-trainned model from hugging face. Ideal for trend analysis and media monitoring"
     }
 ]
 

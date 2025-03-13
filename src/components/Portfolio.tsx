@@ -6,9 +6,17 @@ import ProjectCard from "./common/projectCard"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faFlask } from "@fortawesome/free-solid-svg-icons"
 import { useSelector } from "react-redux"
+import { Tooltip } from 'react-tooltip';
+
 
 function Portfolio() {
   const isSidebarOpen = useSelector((state: { sidebarReducer: { isOpen: boolean } }) => state.sidebarReducer.isOpen)
+  // const [isOpen, setIsOpen] = useState(false)
+
+  // const toggleModal = () => {
+  //   setIsOpen(!isOpen);
+  // }
+
   return (
     <section className={`${isSidebarOpen ? "w-10/12" : "w-full"} section-conatiner flex`} id="portfolio">
       <PageName name="Portfolio" />
@@ -17,6 +25,9 @@ function Portfolio() {
           {projects.map((project, index) => {
             return <ProjectCard key={index} imageSrc={project.imageUrl} title={project.name} link={project.link} github={project.github} detail={project.detail} />
           })}
+          <div>
+            <Tooltip id="project-tooltip" place="top" />
+          </div>
         </div>
         <div className="flex justify-end py-4">
           <Link to={{ pathname: "/experience" }}>
@@ -27,6 +38,7 @@ function Portfolio() {
         </div>
       </div>
       <NavDots currentPage="Portfolio" />
+      {/* <ProjectModal isOpen={isOpen} toggleModal={toggleModal} /> */}
     </section >
   )
 }

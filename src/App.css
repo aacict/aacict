@@ -71,6 +71,14 @@
     left: 11%;
 }
 
+#project-tooltip {
+    font-size: 14px;
+    color: #fff;
+    background-color: #333;
+    padding: 8px;
+    border-radius: 4px;
+}
+
 #Experience button {
     background-color: #ffd700;
     color: #000;
