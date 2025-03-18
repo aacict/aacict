@@ -9,11 +9,12 @@ export const objectDetection = async (image: File) => {
             headers: {
                 "Content-Type": "multipart/form-data",
             },
-            responseType: "blob",
+            // responseType: "blob",
         });
 
-        const imageURL = URL.createObjectURL(response.data);
-        return { imageUrl: imageURL };
+        // const imageURL = URL.createObjectURL(response.data);
+        console.log(response.data)
+        return response.data;
     } catch (error) {
         console.error('Error fetching users:', error);
         throw error;

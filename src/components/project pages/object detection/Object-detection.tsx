@@ -1,20 +1,27 @@
-import React, { ChangeEvent, useState } from "react";
+import { ChangeEvent, useState } from "react";
 import { useMutation } from "@tanstack/react-query";
 import { objectDetection } from "../../../queries/object-detection";
 
+interface objectDetectionRespResults {
+    label: string;
+    score: number;
+}
 interface objectDetectionResp {
-    imageUrl: string;
+    image: string;
+    results: Array<objectDetectionRespResults>;
 }
 
 const ObjectDetection = () => {
     const [image, setImage] = useState<File | null>(null);
     const [detectedImage, setDetectedImage] = useState<string | null>(null);
+    const [results, setResults] = useState<Array<objectDetectionRespResults>>([]);
     const [error, setError] = useState<string | null>(null);
 
-    const { mutateAsync, isPending, isError, error: mutationError } = useMutation({
+    const { mutateAsync, isPending, error: mutationError } = useMutation({
         mutationFn: objectDetection,
         onSuccess: (data: objectDetectionResp) => {
-            setDetectedImage(data.imageUrl);
+            setDetectedImage(`data:image/jpeg;base64,${data.image}`);
+            setResults(data.results);
         },
         onError: (error: unknown) => {
             console.error("Error uploading image:", error);
@@ -75,17 +82,25 @@ const ObjectDetection = () => {
                     <p className="text-center text-red-500 font-semibold">{mutationError?.message}</p>
                 )}
 
-                {detectedImage && (
-                    <div className="text-center">
-                        <h2 className="text-xl font-semibold text-blue-500 mt-6">Detected Image</h2>
-                        <img
-                            src={detectedImage}
-                            alt="Detected result"
-                            className="mx-auto mt-4 w-[70%] max-h-96 object-contain rounded-lg shadow-lg"
-                        />
-                    </div>
-                )}
             </div>
+            {detectedImage && (<div className="text-center">
+                <h2 className="text-xl font-semibold text-blue-500 mt-6">Detected Image</h2>
+                <div className=" ">
+                    <img
+                        src={detectedImage}
+                        alt="Detected result"
+                        className="mx-auto mt-4 w-[70%] max-h-96 object-contain rounded-lg shadow-lg"
+                    />
+                    <div className="detection-list text-red-500">
+                        {results.map((result, index) => (
+                            <li key={index}>
+                                Detected {result.label} with confidence score {result.score}.
+                            </li>
+                        ))}
+                    </div>
+                </div>
+            </div>
+            )}
         </div>
     );
 };
