@@ -10,6 +10,8 @@ import personalProtfolio from "../assets/images/personalProtfolio.png"
 import blackp from "../assets/images/blackp.png"
 import ai from "../assets/images/ai.jpg"
 import sentiment from "../assets/images/sentiment.jpg"
+import objectDet from "../assets/images/objectDet.jpg"
+import stockApp from "../assets/images/stockApp.jpg"
 export const MainMenuListItem: Array<string> = ["Intro", "About", "Expertise", "Professional", "Personal"]
 
 export const FirstName = "Ashish"
@@ -116,7 +118,18 @@ export const Experiences = [
             name: "Narad Muni",
             link: "https://www.facebook.com/NaradMuniApp/",
             imageUrl: naradMuniImg
-        },]
+        },
+        {
+            name: "Worker Pros",
+            link: "/",
+            imageUrl: blackp
+        },
+        {
+            name: "My Social View",
+            link: "/",
+            imageUrl: blackp
+        },
+        ]
     },
     {
         start: "2018",
@@ -193,14 +206,14 @@ export const projects = [
     {
         name: "Stock Data Analytics",
         link: "https://stock-data-analytics-dy9sxvvbtwwstlffhzcaf6.streamlit.app/",
-        imageUrl: blackp,
+        imageUrl: stockApp,
         github: "https://github.com/swekriti12/Stock-Data-Analytics",
         detail: "Stock data analysis and visualization tool built with Streamlit, Plotly, and Pandas. The tool provides insights into stock trend, stock performance, market trends, related news and their sentiment analysis."
     },
     {
         name: "Object Detection",
         link: `${import.meta.env.VITE_APP_URL}/object-detection`,
-        imageUrl: blackp,
+        imageUrl: objectDet,
         github: "https://github.com/aacict/news_sentiment_analysis",
         detail: "Object Detection implementation from scratch using yolo"
     },

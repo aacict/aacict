@@ -33,9 +33,9 @@ function Experience() {
             <div className="container all-section-container m-auto px-24" >
                 <div className="bg-white w-full h-1"></div>
                 <div className="relative w-full overflow-hidden">
-                    <div className="flex animate-scroll">
+                    <div className="flex animate-scroll group">
                         {Experiences.map((exp, index) => (
-                            <div key={index} className={`p-4`}>
+                            <div key={index} className={`p-4 group-hover:animate-none`}>
                                 <div className="w-4 h-4 rounded-full relative left-1/2 bottom-2 border-2 border-white"></div>
 
                                 <div
