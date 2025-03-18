@@ -4,7 +4,6 @@ import orderXlImg from "../assets/images/orderXL.png"
 import surebirdImg from "../assets/images/surebird.png"
 import tiboImg from "../assets/images/tibo.png"
 import sdokyImg from "../assets/images/sdoky.png"
-import ocarromImg from "../assets/images/ocarrom.png"
 import naradMuniImg from "../assets/images/Naradmuni.png"
 import laxmiBotImg from "../assets/images/laxmiddbot.png"
 import personalProtfolio from "../assets/images/personalProtfolio.png"
@@ -186,18 +185,26 @@ export const projects = [
     },
     {
         name: "News Sentiment Analysis",
-        link: `${import.meta.env.VITE_APP_URL}/news_sentiment_analysis`,
+        link: `${import.meta.env.VITE_APP_URL}/news-sentiment-analysis`,
         imageUrl: sentiment,
         github: "https://github.com/aacict/news_sentiment_analysis",
         detail: "Sentiment analysis tool for news articles, leveraging pre-trainned model from hugging face. Ideal for trend analysis and media monitoring"
     },
     {
-        name: "Stock data Analysis",
+        name: "Stock Data Analytics",
         link: "https://stock-data-analytics-dy9sxvvbtwwstlffhzcaf6.streamlit.app/",
-        imageUrl: ocarromImg,
+        imageUrl: blackp,
         github: "https://github.com/swekriti12/Stock-Data-Analytics",
         detail: "Stock data analysis and visualization tool built with Streamlit, Plotly, and Pandas. The tool provides insights into stock trend, stock performance, market trends, related news and their sentiment analysis."
     },
+    {
+        name: "Object Detection",
+        link: `${import.meta.env.VITE_APP_URL}/object-detection`,
+        imageUrl: blackp,
+        github: "https://github.com/aacict/news_sentiment_analysis",
+        detail: "Object Detection implementation from scratch using yolo"
+    },
+
 ]
 
 export const ExpertiseContent = {

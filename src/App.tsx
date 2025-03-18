@@ -10,10 +10,10 @@ import NotFound from './components/main/common/404';
 import store from "./redux/store";
 import { Provider } from "react-redux";
 import { QueryClient, QueryClientProvider, } from '@tanstack/react-query'
-import QueryTest from './components/main/QueryTest';
 import PortfolioLayout from './components/layout/PortfolioLayout';
 import ProjectLayout from './components/layout/ProjectLayout';
 import NewsSentimentAnalysis from './components/project pages/news sentiment analysis/News-sentiment-analysis';
+import ObjectDetection from './components/project pages/object detection/Object-detection';
 const queryClient = new QueryClient()
 
 function App() {
@@ -32,8 +32,8 @@ function App() {
               <Route path='/personal' element={<Portfolio />}></Route>
             </Route>
             <Route element={<ProjectLayout />}>
-              <Route path='/news_sentiment_analysis' element={<NewsSentimentAnalysis />}></Route>
-              <Route path='/test' element={<QueryTest />}></Route>
+              <Route path='/news-sentiment-analysis' element={<NewsSentimentAnalysis />}></Route>
+              <Route path='/object-detection' element={<ObjectDetection />}></Route>
             </Route>
             <Route path='*' element={<NotFound />} /> {/* Catch-all route */}
           </Routes>

@@ -7,7 +7,7 @@ interface News {
 
 export const getNews = async (query = 'ronaldo') => {
     try {
-        const response = await axios.get(`${BASEURL}/get-news`, { params: { query } });
+        const response = await axios.get(`${BASEURL}/news-sentiment/get-news`, { params: { query } });
         // return { "status": "success", "data": news }
         return response.data;
     } catch (error) {
@@ -18,7 +18,7 @@ export const getNews = async (query = 'ronaldo') => {
 
 export const getNewsSentiment = async (news: News) => {
     try {
-        const response = await axios.post(`${BASEURL}/get-news-sentiment`, { news });
+        const response = await axios.post(`${BASEURL}/news-sentiment/get-news-sentiment`, { news });
         // return { "status": "success", "data": news }
         return response.data;
     } catch (error) {
