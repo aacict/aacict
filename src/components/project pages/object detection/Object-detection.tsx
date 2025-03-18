@@ -17,7 +17,7 @@ const ObjectDetection = () => {
     const [results, setResults] = useState<Array<objectDetectionRespResults>>([]);
     const [error, setError] = useState<string | null>(null);
 
-    const { mutateAsync, isPending, error: mutationError } = useMutation({
+    const { mutateAsync, isPending } = useMutation({
         mutationFn: objectDetection,
         onSuccess: (data: objectDetectionResp) => {
             setDetectedImage(`data:image/jpeg;base64,${data.image}`);
@@ -79,7 +79,7 @@ const ObjectDetection = () => {
 
             <div>
                 {error && (
-                    <p className="text-center text-red-500 font-semibold">{mutationError?.message}</p>
+                    <p className="text-center text-red-500 font-semibold">{error}</p>
                 )}
 
             </div>
