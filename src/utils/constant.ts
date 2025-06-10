@@ -1,8 +1,40 @@
 import {
+  faJs,
+  faPython,
+  faReact,
+  faNodeJs,
+  faGit,
+  faDocker,
+  faGitlab,
+  faBitbucket,
+  faAws,
+  faMicrosoft,
+  faJira,
   faFacebook,
   faGithub,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
+
+import {
+  faCode,
+  faServer,
+  faCube,
+  faCubes,
+  faFeatherAlt,
+  faMugHot,
+  faPaperPlane,
+  faChartPie,
+  faNetworkWired,
+  faLeaf,
+  faSmile,
+  faBolt,
+  faChartColumn,
+  faHSquare,
+  faDatabase,
+  faProjectDiagram,
+  faCloud,
+  faComputer,
+} from "@fortawesome/free-solid-svg-icons";
 import botreeimg from "../assets/images/botree.png";
 import orderXlImg from "../assets/images/orderXL.png";
 import surebirdImg from "../assets/images/surebird.png";
@@ -284,14 +316,52 @@ export const projects = [
 ];
 
 export const ExpertiseContent = {
-  "Languages & Frameworks":
-    "JavaScript, TypeScript, Python, SQL, Node.js, NestJS, Express.js, React, Mocha, Chai.",
-  Databases: "MySQL, Postgres, MongoDB, Redis.",
-  "Cloud Platforms": `AWS, Azure, Heroku`,
-  "DevOps & Tools":
-    "Git, Docker, Postman, Swagger, Jira, CI / CD(Bitbucket, GitLab), PowerBI, Tableau.",
-  "Data Science": "Hugging Face, TensorFlow, Scikit - learn, Spark.",
-  Core: "OOP, Data Structures & Algorithms, Cloud Computing, AI Infrastructure & Architecture.",
+  "Languages & Frameworks": [
+    { name: "JavaScript", icon: faJs },
+    { name: "TypeScript", icon: faCode },
+    { name: "Python", icon: faPython },
+    { name: "SQL", icon: faDatabase },
+    { name: "Node.js", icon: faNodeJs },
+    { name: "NestJS", icon: faFeatherAlt },
+    { name: "Express.js", icon: faServer },
+    { name: "React", icon: faReact },
+    { name: "Mocha", icon: faMugHot },
+    { name: "Chai", icon: faMugHot },
+  ],
+  Databases: [
+    { name: "MySQL", icon: faDatabase },
+    { name: "Postgres", icon: faDatabase },
+    { name: "MongoDB", icon: faLeaf }, // Not in FA, may need custom
+    { name: "Redis", icon: faServer },
+  ],
+  "Cloud Platforms": [
+    { name: "AWS", icon: faAws },
+    { name: "Azure", icon: faMicrosoft },
+    { name: "Heroku", icon: faHSquare },
+  ],
+  "DevOps & Tools": [
+    { name: "Git", icon: faGit },
+    { name: "Docker", icon: faDocker },
+    { name: "Postman", icon: faPaperPlane },
+    { name: "Swagger", icon: faCode },
+    { name: "Jira", icon: faJira },
+    { name: "Bitbucket", icon: faBitbucket },
+    { name: "GitLab", icon: faGitlab },
+    { name: "PowerBI", icon: faChartColumn },
+    { name: "Tableau", icon: faChartPie },
+  ],
+  "Data Science": [
+    { name: "Hugging Face", icon: faSmile }, // closest match
+    { name: "TensorFlow", icon: faNetworkWired },
+    { name: "Scikit-learn", icon: faComputer },
+    { name: "Spark", icon: faBolt },
+  ],
+  Core: [
+    { name: "OOP", icon: faCubes },
+    { name: "Data Structures & Algorithms", icon: faProjectDiagram },
+    { name: "Cloud Computing", icon: faCloud },
+    { name: "AI Infrastructure & Architecture", icon: faCube },
+  ],
 };
 
 export const SocialLinks = [
