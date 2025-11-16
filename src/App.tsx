@@ -15,6 +15,8 @@ import ProjectLayout from './components/layout/ProjectLayout';
 import NewsSentimentAnalysis from './components/project pages/news sentiment analysis/News-sentiment-analysis';
 import ObjectDetection from './components/project pages/object detection/Object-detection';
 import CrimeAnalytics from './components/project pages/crime analytics/Crime-analytics';
+import PortfolioLayoutV2 from './components/layout/PortfolioLayoutV2';
+import PortfolioV2Page from './components/project pages/portfolioV2/Page';
 const queryClient = new QueryClient()
 
 function App() {
@@ -36,6 +38,9 @@ function App() {
               <Route path='/news-sentiment-analysis' element={<NewsSentimentAnalysis />}></Route>
               <Route path='/object-detection' element={<ObjectDetection />}></Route>
               <Route path='/crime-analytics' element={<CrimeAnalytics />}></Route>
+            </Route>
+            <Route element={<PortfolioLayoutV2 />}>
+              <Route path='/v2' element={<PortfolioV2Page />}></Route>
             </Route>
             <Route path='*' element={<NotFound />} /> {/* Catch-all route */}
           </Routes>
